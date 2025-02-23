@@ -34,7 +34,7 @@ noln(&mut map);
 full_ln(&mut map, 40.0, 30.0);
 
 // Convert notes to LNs based on 1/8 beat division
-full_ln_beat_divisor(&mut map, 8.0, None);
+full_ln_beat_divisor(&mut map, 1f64/8f64, None);
 
 // Save the modified beatmap
 map.encode_to_path("path/to/output.osu").unwrap();
